@@ -1,14 +1,16 @@
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 300 to 800
+
 
 .open-sans-normal {
   font-family: "Open Sans", serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings:"wdth" 100;
 }
 /* shared style */
+
+.second-bg{
+    background-color: #FFF8F3;
+}
 .text-primary{
     color:#FD6E0A
 }
@@ -18,6 +20,9 @@
     background-image: url('../images/developer.png'),url('../images/header_bg.png');
     background-repeat:no-repeat;
     background-position: top left, bottom right;
+    margin: 10px;
+
+    
     
 }
 
@@ -27,13 +32,15 @@ nav{
     display:flex ;
     align-items: center;
     justify-content: space-between;
-    margin: 0 200px;
+    margin: 0 230px;
 }
 
 
 .nav-title{
     font-weight: 800;
     font-size: 45px;
+    /* margin-bottom: 150px; */
+    justify-content: space-between;
 }
 
 nav ul{
@@ -61,17 +68,22 @@ nav ul{
     font-weight: bold;
     font-size: 20px;
     color: white;
-    border: none;
+    border:2px solid #FD6E0A;
     padding: 18px 35px;
     border-radius: 5px;
+ }
+ .Contact{
+    background-color:white;
+    color: #FD6E0A;
+
  }
 
  /* banner styles */
 
  .banner{
     display: flex; 
-    justify-content: space-between;  
-    margin: 0 35px 0 230px;
+    justify-content:space-between;  
+    margin: 45px 35px 0 230px;
 }
 .banner-content{
     max-width: 580px;
@@ -79,12 +91,53 @@ nav ul{
  .banner-greetings{
     font-size: 45px;
     font-weight: 600;
+    margin: 150px 0 1px 0;
+
  }
  .banner-title{
-    font-weight: bold;
-    font-size: 75px;
+    font-weight:400;
+    font-size:65px;
+    margin: 1px 0 1px 0;
+
  }
 .banner-profile-pic{
-    width: 580px;
+    width: 600px;
+}
+.section-title{
+    font-size: 35px;
+    font-weight: bold;
+    color: #181818;
+}
+.banner-description{
+    font-size: 18px;
+    color:#757575;
+    margin-bottom: 30px;
 }
 
+/* about style */
+.about{
+    border-radius: 10px;
+    padding: 130px 150px;
+    text-align: center;
+    margin-top: 130px;
+}
+
+/* main style */
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.iteam-description{
+    font-weight: 600;
+}
+.about-iteams{
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid black; */
+}
+.border{
+    border: 2px solid black;
+    background-color:#FFFFFF;
+
+}
